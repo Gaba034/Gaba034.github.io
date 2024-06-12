@@ -3,27 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Document</title>
+    <audio id="patrick">
+      <source src="loveyou.mp3" type="audio/mpeg">
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        :root {
+          --eye-color: #db7c26;
+          --iris-color: #f7b538;
+          --pupil-color: #780116;
+          --eyelids-color: var(--eye-color);
+          --bg-color: #c32f27;
+        }
+
+        svg {
+          height: 50vh;
+          width: 30vw;
+          border-radius: 100%;
+          display: block;
+          background: rgb(0, 0, 0);
+        }
+
+        .eyelids {
+          stroke: black;
+        }
+
+        .eye {
+          fill: white;
+          stroke: none;
+        }
+
+        .iris {
+          fill: rgb(182, 13, 13);
+        }
+
+        .pupil {
+          fill: red;
+        }
+
+        .highlight {
+          fill: white;
+          opacity: 0.9;
+        }
+
+        .card {
+            flex: 1 0 20%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .card1 {
+            flex: 1 0 20%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .final {
+            flex: 1 0 20%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .container-b{
+            background-color: rgb(255, 255, 255);
+            height: 50vh;
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(37, 211, 37);
+            font-family: "Tiny5", sans-serif;
+            border: greenyellow;
+        }
+        .container{
+            background-color: black;
+            height: 20vh;
+            width: 20vw;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 6, 6);
+            font-family: "Tiny5", sans-serif;
+        }
+        .flower{
+          height: 20vh;
+          width: 15vw;
+        }
+
+        .love-button {
+          background-color: rgb(252, 160, 232) !important;
+          color: white !important;
+          text-decoration: none !important;
+        }
+
+        .love-button .instant-link {
+          display: none !important;
+        }
+
+        .love-button .instant-action-button-icon{
+          display: none;
+        }
+        .card11 {z-index: 21;}
+        .card12 {z-index: 20;}
+        .card13 {z-index: 19;}
+        .card14 {z-index: 18;}
+        .card15 {z-index: 17;}
+        .card16 {z-index: 16;}
+        .card17 {z-index: 15;}
+        .card18 {z-index: 14;}
+        .card19 {z-index: 13;}
+        .card-1 { background-color: #000000; z-index: 12; overflow: hidden;height: 100vh;width: 100vw;;}
+        .card-2 { background-color: #e7e7e748; z-index: 11; }
+        .card-3 { background-color: #e7e7e748; z-index: 10; }
+        .card-4 { background-color: #e7e7e748; z-index: 9; }
+        .card-5 { background-color: #e7e7e748; z-index: 8; }
+        .card-6 { background-color: #e7e7e748; z-index: 7; }
+        .card-7 { background-color: #e7e7e748; z-index: 6; }
+        .card-8 { background-color: #e7e7e748; z-index: 5; }
+        .card-9 { background-color: #e7e7e748; z-index: 4; }
+        .card-10 { background-color: #e7e7e748; z-index: 3; }
+        .card-11 { background-color: #e7e7e748; z-index: 2; }
+        .card-12 { background-color: #e7e7e748; z-index: 1; }
+        .card-12 { background-color: #2082dd; z-index: 0; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple HTML Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a simple HTML page created for demonstration purposes.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Simple HTML Page. All rights reserved.</p>
-    </footer>
+    <audio autoplay loop id="backgroundAudio">
+        <source src="sound.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    <div class="card1 card11"><div class="container">ZzzzZzZzZZzZzZ</div></div>
+    <div class="card1 card12"><div class="container">*pOp*</div></div>
+    <div class="card1 card13"><div class="container">Oras oras, quem ousas acordar o guardião?</div></div>
+    <div class="card1 card14"><div class="container">Réles mortal, deseja a morte? Pois é isso que aguarda-te.</div></div>
+    <div class="card1 card15"><div class="container">Uhmmm, se bem que....</div></div>
+    <div class="card1 card16"><div class="container">....</div></div>
+    <div class="card1 card17"><div class="container">Deve ser um convidado *dele* para ter chegado até aqui</div></div>
+    <div class="card1 card18"><div class="container">O mestre permitiu sua passagem, adiante humano.</div></div>
+    <div class="card eye card19" onclick="Delete_card()"><div class="container"><svg viewBox="-5 10 110 80">
+      <defs>
+        <clipPath id="eyelidsClipPath">
+          <path class="eyelids" d="M0,80C0,80 15.8,73.7 29.6,68.2C42.7,62.9 57.3,62.9 70.4,68.2C84.2,73.7 100,80 100,80C100,80 84.2,86.3 70.4,91.8C57.3,97.1 42.7,97.1 29.6,91.8C15.8,86.3 0,80 0,80Z" transform="matrix(1,0,0,1,0,-30)" />
+        </clipPath>
+      </defs>
+    
+      <path class="eyelids" d="M0,80C0,80 15.8,73.7 29.6,68.2C42.7,62.9 57.3,62.9 70.4,68.2C84.2,73.7 100,80 100,80C100,80 84.2,86.3 70.4,91.8C57.3,97.1 42.7,97.1 29.6,91.8C15.8,86.3 0,80 0,80Z" fill="none" transform="matrix(1,0,0,1,0,-30)" stroke-linejoin="round" stroke-width="2" />
+    
+      <g clip-path="url(#eyelidsClipPath)">
+        <path class="eye" d="M0 0 H100 V100 H0 Z" />
+    
+        <g id="eyeball" class="eyeball">
+          <circle class="iris" cx="50" cy="50" r="20" />
+          <circle id="pupil" class="pupil" cx="50" cy="50" r="10" />
+          <circle class="highlight" cx="50" cy="42.5" r="1.2" />
+          <circle id="smallHighlight" class="highlight" cx="50" cy="44.5" r="0.3" />
+        </g>
+      </g>
+    </svg>
+
+    </div></div>
+    
+    <div class="card eye card-1">
+        <div><canvas id="particle"></canvas></div>
+    </div>
+    <div class="card card-2"><div class="container-b">*%b&)c$@#!o$c(@!n&</div></div>
+    <div class="card card-3"><div class="container-b">Ei  :)</div></div>
+    <div class="card card-4"><div class="container-b">Só queria dizer que eu te aprecio muito, tu és uma das coisas mais importantes para mim...</div></div>
+    <div class="card card-5"><div class="container-b">Planejei viver a vida sozinho, até eu te conhecer. Agradeço muito, sou muito mais feliz assim</div></div>
+    <div class="card card-6"><div class="container-b">Me ama do jeito esquisito que sou</div></div>
+    <div class="card card-7"><div class="container-b">Te amo muito.</div></div>
+    <div class="card card-8"><div class="container-b">Sempore faz eu me sentir amado e valorizado</div></div>
+    <div class="card card-9"><div class="container-b">Eu te amo muito, não há uma forma de quantificar isso pois não tem</div></div>
+    <div class="card card-10"><div class="container-b">És uma gema rara que pretendo polir cada dia mais</div></div>
+    <div class="card card-11"><div class="container-b">Tenho o maior orgulho em ter você como minha amada</div></div>
+    <div class="card card-12"><div class="container-b">Enfim, o resto falo toda vez que te vejo. Mas essa foi uma forma que achei de demonstrar mais uma vez isso</div></div>
+    <div class="final">
+      <h1>Eu te AMO</h1>
+      <div class="flower">
+        <img class="flower" src="flower.png">
+      </div>
+      <div>
+        <button class="love-button" onclick="Love()"> Clique sem medo</button>
+      </div>
+    </div>
+    <script>
+      const EL_EYE = document.querySelector("#eyeball");
+      const EL_LIDS = document.querySelectorAll(".eyelids");
+      const EL_PUPIL = document.querySelector("#pupil");
+      const EL_HIGHLIGHT = document.querySelector("#smallHighlight");
+  
+      const PATH_LID_CLOSED = "M0,80C0,80 15.7,83.3 29.5,86.2C43,89 57,89 70.5,86.2C84.3,83.3 100,80 100,80C100,80 84.3,83.3 70.5,86.2C57,89 43,89 29.5,86.2C15.7,83.3 0,80 0,80Z";
+      const PATH_LID_OPEN = document.querySelector(".eyelids").getAttribute("d");
+  
+      const EYE_MOVEMENT = 1;
+      const PUPIL_MOVEMENT = 1;
+  
+      function blink({ delay } = {}) {
+        let shouldQuickBlink = Math.random() < 0.2;
+        let randomDelay = 5 + Math.random() * 3;
+        let toCloseDuration = 3 + Math.random() * 0.3;
+        let toOpenDuration = shouldQuickBlink ? 0.5 : 0.8 + Math.random() * 0.10;
+      
+        gsap.timeline({
+          onComplete: blink,
+          delay: delay ?? (shouldQuickBlink ? 0 : randomDelay),
+          defaults: { ease: "power3.out" },
+        })
+        .to(EL_LIDS, {
+          attr: { d: PATH_LID_CLOSED },
+          duration: toCloseDuration,
+        })
+        .to(EL_LIDS, {
+          attr: { d: PATH_LID_OPEN },
+          duration: toOpenDuration,
+        });
+      }
+  
+      function moveEyeball() {
+        let toRightDuration = 0.5 + Math.random() * 3;
+        let toLeftDuration = 0.5 + Math.random() * 3;
+      
+        gsap.timeline({
+          onComplete: moveEyeball,
+          defaults: {
+            ease: "expo.inOut",
+            transformOrigin: "center center",
+          },
+        })
+        .addLabel("toRight")
+        .to(EL_EYE, { x: -EYE_MOVEMENT, duration: toRightDuration }, "toRight")
+        .to(EL_PUPIL, { x: -PUPIL_MOVEMENT, duration: toRightDuration }, "toRight")
+        .to(EL_HIGHLIGHT, { x: -1, duration: toRightDuration }, "toRight")
+        .addLabel("toLeft")
+        .to(EL_EYE, { x: EYE_MOVEMENT, duration: toLeftDuration }, "toLeft")
+        .to(EL_PUPIL, { x: PUPIL_MOVEMENT, duration: toLeftDuration }, "toLeft")
+        .to(EL_HIGHLIGHT, { x: 1, duration: toLeftDuration }, "toLeft");
+      };
+  
+      function Delete_card() {
+        const eye = document.querySelectorAll('.eye');
+        eye.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, (index + 1) * 1);
+        });
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, (index + 1) * 8000);
+        });
+      }
+  
+      document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("backgroundAudio");
+  
+        const cards = document.querySelectorAll('.card1');
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.display = 'none';
+            if (index === cards.length - 1) {
+              audio.pause();
+            }
+          }, (index + 1) * 5000);
+        });
+      });
+  
+      window.requestAnimFrame = 
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+      };
+  
+      var canvas = document.getElementById('particle');
+      var ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+  
+      function Particle(x, y, distance) {
+        this.angle = Math.random() * 4 * Math.PI;
+        this.radius = Math.random() * 20; 
+        this.fillStyle = "rgba(10,0,0,0)";
+        this.opacity = (Math.random() * 5 + 2) / 7;
+        this.distance = (3 / this.opacity) * distance;
+        this.speed = this.distance * 0.0000004;
+        this.position = {
+          x: x + this.distance * Math.cos(this.angle) ** 2,
+          y: y + this.distance * Math.sin(this.angle) ** 2
+        };
+        this.draw = function() {
+          ctx.fillStyle = "rgba(255,7,75," + this.opacity + ")";
+          ctx.beginPath();
+          ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2, false);
+          ctx.fill();
+          ctx.closePath();
+        }
+        this.update = function() {
+          this.angle += this.speed; 
+          this.position = {
+            x: x + this.distance * Math.cos(this.angle),
+            y: y + this.distance * Math.sin(this.angle)
+          };
+          this.draw();
+        }
+      }
+  
+      function Emitter(x, y) {
+        this.position = { x: x, y: y };
+        this.radius = 120;
+        this.count = 2000;
+        this.particles = [];
+        for (var i = 0; i < this.count; i++) {
+          this.particles.push(new Particle(this.position.x, this.position.y, this.radius));
+        }
+      }
+  
+      Emitter.prototype = {
+        draw: function() {
+          ctx.fillStyle = "rgba(0,0,0,0.1)";
+          ctx.beginPath();
+          ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2, false);
+          ctx.fill();
+          ctx.closePath();    
+        },
+        update: function() {  
+          for (var i = 0; i < this.count; i++) {
+            this.particles[i].update();
+          }
+          this.draw(); 
+        }
+      }
+  
+      var emitter = new Emitter(canvas.width / 2, canvas.height / 2);
+  
+      function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        emitter.update();
+        requestAnimFrame(loop);
+      }
+  
+      moveEyeball();
+      blink({ delay: 0.3 });
+      loop();
+
+      function Love(){
+        var audio = document.getElementById("patrick");
+        audio.play()
+
+      }
+    </script>
 </body>
 </html>
